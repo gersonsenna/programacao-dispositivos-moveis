@@ -1,5 +1,8 @@
 import readline from "readline-sync";
-import { listarTarefas, adicionarTarefa, removerTarefa, modificarTarefa } from "./tarefas.js";
+import {  listarTarefas, 
+          adicionarTarefa, 
+          removerTarefa, 
+          modificarTarefa } from "./tarefas.js";
 
 function exibirMenu() {
     console.log("MENU PRINCIPAL");
@@ -8,8 +11,8 @@ function exibirMenu() {
     console.log("3 - Remover tarefa");
     console.log("4 - Modificar tarefa");
     console.log("5 - Sair");
-
 }
+
 function escolherOpcao(opcao) {
     switch (opcao) {
         case "1": {
@@ -43,8 +46,7 @@ function escolherOpcao(opcao) {
         default:
                 console.log("Opção inválida. Tente novamente!");
                     
-    }
-    
+    }    
 }
 
 function main() {
@@ -54,5 +56,6 @@ function main() {
         escolherOpcao(opcao);
     }
   }
+  
 main();
  
